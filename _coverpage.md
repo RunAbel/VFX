@@ -1,4 +1,4 @@
-![logo](../public/logo_1.png)
+![logo](./public/logo_1.png)
 
 本站收集整理各种网页特效，并已在GitHub开源，内容中展示的所有Web动效皆可获取。
 
