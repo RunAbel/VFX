@@ -1,37 +1,3 @@
-\- **[首页](README)** \- [星空轨迹](/动效库/加载ing/星空轨迹/星空轨迹)
-
-------
-# 星空轨迹
-------
-
-> 灵感来源：http://igeekbar.com/
-
-## 效果展示
-
-<p align="center">
-  <img src="动效库\加载ing\星空轨迹\img\示意图.png" hight="300"/>
-</p>
-
-## 具体实现
-> [在线浏览传送门](https://jsrun.net/vA9Kp)
-### html
-
-```html
-<canvas id="c"></canvas>
-```
-
-### css
-
-```css
-canvas {
-  display: block;
-  float: left;
-}
-```
-
-### js
-
-```js
 var c = document.getElementById('c'),
   ctx = c.getContext('2d'),
   cw = c.width = 400,
@@ -156,36 +122,34 @@ var c = document.getElementById('c'),
     ctx.fillRect(0, 0, cw, ch);
     ctx.globalCompositeOperation = 'lighter';
   }
-  loop = function () {
-    clear();
-    updateCircle();
-    renderCircle();
-    renderCircleBorder();
-    renderCircleFlare();
-    renderCircleFlare2();
-    createParticles();
-    updateParticles();
-    renderParticles();
-  }
+loop = function () {
+  clear();
+  updateCircle();
+  renderCircle();
+  renderCircleBorder();
+  renderCircleFlare();
+  renderCircleFlare2();
+  createParticles();
+  updateParticles();
+  renderParticles();
+}
 
-  /* Append Canvas */
-  //document.body.appendChild(c);
+/* Append Canvas */
+//document.body.appendChild(c);
 
-  /* Set Constant Properties */
-  ctx.shadowBlur = circle.blur;
-  ctx.shadowColor = 'hsla(' + circle.hue + ', 80%, 60%, 1)';
-  ctx.lineCap = 'round'
+/* Set Constant Properties */
+ctx.shadowBlur = circle.blur;
+ctx.shadowColor = 'hsla(' + circle.hue + ', 80%, 60%, 1)';
+ctx.lineCap = 'round'
 
-  var gradient1 = ctx.createLinearGradient(0, -circle.radius, 0, circle.radius);
-  gradient1.addColorStop(0, 'hsla(' + circle.hue + ', 60%, 50%, .25)');
-  gradient1.addColorStop(1, 'hsla(' + circle.hue + ', 60%, 50%, 0)');
+var gradient1 = ctx.createLinearGradient(0, -circle.radius, 0, circle.radius);
+gradient1.addColorStop(0, 'hsla(' + circle.hue + ', 60%, 50%, .25)');
+gradient1.addColorStop(1, 'hsla(' + circle.hue + ', 60%, 50%, 0)');
 
-  var gradient2 = ctx.createLinearGradient(0, -circle.radius, 0, circle.radius);
-  gradient2.addColorStop(0, 'hsla(' + circle.hue + ', 100%, 50%, 0)');
-  gradient2.addColorStop(.1, 'hsla(' + circle.hue + ', 100%, 100%, .7)');
-  gradient2.addColorStop(1, 'hsla(' + circle.hue + ', 100%, 50%, 0)');
+var gradient2 = ctx.createLinearGradient(0, -circle.radius, 0, circle.radius);
+gradient2.addColorStop(0, 'hsla(' + circle.hue + ', 100%, 50%, 0)');
+gradient2.addColorStop(.1, 'hsla(' + circle.hue + ', 100%, 100%, .7)');
+gradient2.addColorStop(1, 'hsla(' + circle.hue + ', 100%, 50%, 0)');
 
-  /* Loop It, Loop It Good */
-  setInterval(loop, 16);
-```
-
+/* Loop It, Loop It Good */
+setInterval(loop, 16);
