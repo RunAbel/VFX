@@ -30,10 +30,10 @@
 # **加载ing**
 ------
 
-## 星空轨迹
+### 星空轨迹
 <p align="center">
     <a href="/#/动效库/加载ing/星空轨迹/星空轨迹.md" target="_blank">
-        <img src="./动效库/加载ing/星空轨迹/img/示意图.jpg" hight="300"/>
+        <img src="./动效库/加载ing/星空轨迹/img/示意图.png" hight="300"/>
     </a>
 </p>
 
@@ -41,7 +41,7 @@
 # **布局**
 ------
 
-## 三列布局
+### 三列布局
 <p align="center">
     <a href="/#/动效库/布局/三列布局/三列布局.md" target="_blank">
         <img src="./动效库/布局/三列布局/img/示意图.jpg" hight="300"/>
