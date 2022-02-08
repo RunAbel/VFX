@@ -23,8 +23,8 @@
 ------
 ## 响应式粘性导航
 <p align="center">
-    <a href="/#/动效库/导航/响应式粘性导航/README.md" target="_blank">
-        <img src="./动效库/导航/响应式粘性导航/img/示意图.png" hight="300"/>
+    <a href="/#/动效库/导航/响应式粘性滑块导航/README.md" target="_blank">
+        <img src="./动效库/导航/响应式粘性滑块导航/img/示意图.png" hight="300"/>
     </a>
 </p>
 
