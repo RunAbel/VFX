@@ -34,7 +34,7 @@
 ## 基于threejs的交互粒子动画特效
 <p align="center">
     <a href="/#/动效库/图像处理/基于threejs的交互粒子动画特效/README.md" target="_blank">
-        <img src="./动效库/图像处理/基于threejs的交互粒子动画特效/img/示意图.png" hight="300"/>
+        <img src="./动效库/图像处理/基于threejs的交互粒子动画特效/img/示意图.jpg" hight="300"/>
     </a>
 </p>
 

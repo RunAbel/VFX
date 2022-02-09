@@ -9,7 +9,7 @@
 ## 静态展示
 
 <p align="center">
-  <img src="/动效库/图像处理/基于threejs的交互粒子动画特效/img/示意图.png" hight="300"/>
+  <img src="/动效库/图像处理/基于threejs的交互粒子动画特效/img/示意图.jpg" hight="300"/>
 </p>
 
 
