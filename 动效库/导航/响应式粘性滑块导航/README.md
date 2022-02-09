@@ -6,7 +6,7 @@
 
 > 灵感来源：https://www.php.cn/
 
-## 效果展示
+## 静态展示
 
 <p align="center">
   <img src="/动效库/导航/响应式粘性滑块导航/img/示意图.png" hight="300"/>
