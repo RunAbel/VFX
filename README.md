@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 <p align="center">
     <a href="https://www.abel.run/" target="_blank">
         <img src="./public/logo_2.png" width=""/>
