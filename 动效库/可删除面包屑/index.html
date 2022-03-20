@@ -12,7 +12,9 @@
     .el-aside .el-button {
       width: 100%;
     }
-
+    .el-aside .el-button:focus {
+      background-color: rgba(8, 8, 247, 0.431);
+    }
     .el-header {
       display: flex;
       justify-content: left;
@@ -22,6 +24,12 @@
       border: 0px;
       background: none;
     }
+    .blue {
+      background-color: rgba(8, 8, 247, 0.431);
+    }
+    .white {
+      background-color: rgb(255, 255, 255);
+    }
   </style>
 </head>
 
@@ -29,13 +37,13 @@
   <el-container id="app">
     <el-aside width="200px">
       <div v-for="(item, index) in items" :key="index">
-        <el-button @click="handleInputConfirm(item)">{{item}}</el-button>
+        <el-button :class="item === name ? 'blue' : 'white'" @click="handleInputConfirm(item)">{{item}}</el-button>
       </div>
     </el-aside>
     <el-container>
       <el-header>
         <template :key="tag" v-for="tag in dynamicTags">
-          <el-tag :closable="tag !== '首页' ? true : false" @close="handleClose(tag)">
+          <el-tag :class="tag === name ? 'blue' : ''" :closable="tag !== '首页' ? true : false" @close="handleClose(tag)">
             <button @click="handleInputConfirm(tag)">{{tag}}</button>
           </el-tag>
         </template>
@@ -56,9 +64,9 @@
     el: '#app',
     data: function () {
       return {
-        name: 'Abel',
+        name: '首页',
         items: [...'1234567'],
-        dynamicTags: ['首页', '标签一', '标签二', '标签三'],
+        dynamicTags: ['首页'],
       }
     },
     methods: {

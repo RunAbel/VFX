@@ -19,4 +19,4 @@
 > vue2 + elementUI
 > 动态编辑标签的灵活运用
 
-![qmeQEQ.png](https://s1.ax1x.com/2022/03/21/qmeQEQ.png)
+![qmuIPJ.png](https://s1.ax1x.com/2022/03/21/qmuIPJ.png)
