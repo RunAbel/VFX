@@ -2,8 +2,9 @@
   * [CSSBattle](https://cssbattle.dev/)
   * [JSBin](https://jsbin.com/?html,css,output)
   * [JSRun](https://jsrun.net/)
-* 绘图工具
+* 图像工具
   * [Excalidraw](https://excalidraw.com/)
+  * [视频转GIF](https://www.fly63.com/tool/giftxt/)
 * 网络互传
   * [路过图床](https://imgtu.com/)
   * [PasteMe](https://pasteme.cn/#/)
