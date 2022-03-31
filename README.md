@@ -20,3 +20,9 @@
 > 动态编辑标签的灵活运用
 
 ![qmuIPJ.png](https://s1.ax1x.com/2022/03/21/qmuIPJ.png)
+
+## 有趣的交互
+
+### [纯CSS实现卡片点击全屏](https://jsrun.net/FgQKp/edit)
+
+![qfTsO0.png](https://s1.ax1x.com/2022/03/31/qfTsO0.png)

@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#select {
+  display: none;
+}
+
+.card {
+  width: 400px;
+  height: 600px;
+  background-color: #fff;
+  box-shadow: 0 0 50px 10px rgba(0, 0, 0, .3);
+  transition: all .6s;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.img {
+  width: 400px;
+  height: 230px;
+  background: url(https://img.zcool.cn/community/018e635d39062ca8012187f44e8763.jpg@1280w_1l_2o_100sh.jpg) no-repeat center center;
+  background-size: cover;
+  transition: all .6s;
+}
+
+.title {
+  font-size: 30px;
+  color: rgb(88, 88, 88);
+  margin: 30px 0 15px 0;
+  transition: all .6s;
+  transition-delay: .2s;
+}
+
+.desc {
+  width: 400px;
+  margin-bottom: 20px;
+  padding: 0 30px 0 30px;
+  line-height: 25px;
+  opacity: 1;
+  color: rgb(170, 170, 170);
+}
+
+.content {
+  display: none;
+  height: 1600px;
+  text-align: center;
+  padding: 0 20%;
+  line-height: 40px;
+  background-color: #fff;
+}
+
+.content p {
+  margin: 30px 0;
+  text-align: left;
+  display: table;
+}
+
+/* 
+  点击放大
+*/
+
+#select_table {
+  display: block;
+  position: absolute;
+  width: 400px;
+  height: 600px;
+  z-index: 999;
+}
+
+#select:checked~.card #select_lable {
+  width: 100vw;
+  height: 100vh;
+}
+
+#select:checked~.card {
+  width: 100vw;
+  height: 100vh;
+}
+
+#select:checked~.card .img {
+  width: 100vw;
+  height: 650px;
+  overflow: hidden;
+}
+
+#select:checked~.card .title {
+  transform: translateY(-400px);
+  color: #fff;
+  font-size: 70px;
+}
+
+#select:checked~.card .desc {
+  display: none;
+  opacity: 0;
+}
+
+#select:checked~.card .content {
+  display: block;
+  animation: content 2s;
+  transform: translateY(-50px);
+}
+
+@keyframes content {
+  from {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-50px);
+  }
+}
